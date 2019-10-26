@@ -1,3 +1,4 @@
 {
-	"mongoUrl": "'mongodb://127.0.0.1:27017/hotelManagment"
+	"mongoUrl": "'mongodb://127.0.0.1:27017/hotelManagment",
+	"jwtTokenSecret": "Ajnv752nc*/5$%_+=2jcMkhds"
 }
