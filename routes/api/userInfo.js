@@ -2,8 +2,10 @@ const express = require('express');
 const router = express.Router();
 const validate = require('../../error/errorValidation');
 const UserInfo = require('../../db/model/userInfo');
+const auth = require('../../middleware/auth');
 
 router.post('/', async(req, res)=>{
+	console.log(req.token, 'TOKEN');
 	let {name, mobile, email, aadharCard, panId, address = '', state = '', pincode = '', city = ''} = req.body;
 	let totalError = [], code, mobileArr = [], emailArr = [];
 	let {value, error, errorMessage = ''} = validate({value: email, type: 'email'});

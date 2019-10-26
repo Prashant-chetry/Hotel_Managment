@@ -1,5 +1,5 @@
 const express = require('express');
 const router = express.Router();
-
-router.post('/', (req, res)=> res.send('User URL'));
+// const auth = require('../../middleware/auth');
+// router.post('/', auth, (req, res)=> res.send('User URL'));
 module.exports = router;
